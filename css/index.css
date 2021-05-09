@@ -20,8 +20,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height:150vh;
-    background-color: #fff;
+    min-height:100vh;
+    background-color: #fff;  
     font-family: 'Roboto', sans-serif;
     font-family: 'PT Serif', serif;
 }
@@ -31,8 +31,8 @@ body{
     max-width:600px;
     border:1px solid #e9ecf1;
     position: relative;
-    height:150vh;
-   
+    height:100vh;
+    overflow-y: scroll;
     scroll-behavior:smooth;
     
 }
@@ -106,14 +106,20 @@ div.header.container{
     display: flex;
 }
 
+.container span{
+    display:flex;
+    flex:1;
+    width:100%;
+}
 .container p{
-    font-size: 18px;
+    font-size: 12px;
+    display:flex;
 }
 .search{
     width: 90%;
     align-items: center;
     height: 5vh;
-    background-color: rgb(228, 225, 238);
+    background-color: rgb(245, 244, 250);
     
 }
 
@@ -121,14 +127,32 @@ div.header.container{
 .banner-slider{
     width:100%;
     position: relative;
+    display: flex;
 }
+
+  .slider-container {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .slide {
+    display: flex;
+    justify-content: space-around;
+  }
+  .slide > img {
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
 
 .ban{
     position:absolute;
-    right: 35%;
+    right: 45%;
     top:30%;
     color:#fff;
-    font-size: 1.5em;
+    font-size: 1.1em;
     display: block;
 }
 .ban span{
@@ -139,7 +163,7 @@ div.header.container{
 .contact{
     position: absolute;
     top:30%;
-    left: 70%;
+    left: 60%;
     background-color: #3369b9;
     text-align: center;
     color: #fff;
@@ -315,9 +339,6 @@ section.cards{
     display: inline;
 align-items: center;
     
-}
-.bars i{
-    float: right;
 }
 
 #toaster{
