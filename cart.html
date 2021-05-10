@@ -36,7 +36,7 @@
                                     </li> 
                                     </ul>
                                     </nav>
-                                    </header>
+            </header>
                                     
 <section  class="head">
     <div class="header-container">
@@ -47,7 +47,7 @@
     </section class="cart-one">
     <div class="carts"><img src="img/three.jpg">
         <p> 2019 Vintage Coca Cola <br>
-           <span class="num"> N18,099.09</span></p>
+        <span class="num"> N18,099.09</span></p>
     </div>
     <div class="carts-two">
         <span class="delete">
@@ -80,13 +80,14 @@
         </section>
         <section>
             <div class="total">
-               <p> SubTotal <span>N18,099.09</span></p>
-              <br> <br><p> Total <span>N18,099.09</span></p>
+            <p> SubTotal <span>N18,099.09</span></p>
+            <br> <br><p> Total <span>N18,099.09</span></p>
             </div>
-        
-            
             </section>
-            <div id="btn_link1"><button class="out">Checkout</button></div>
+
+        
+                <div id="btn_link1"><button class="out">Checkout</button></div>
+            
 
             <section>
                 <div class="rate">
@@ -101,15 +102,22 @@
                         <div class="pricing">
                             <img src="img/five.jpg" alt=""/>
                         <p>Free sample small tote bag gucci<br>fen...  ₦900 - ₦1,500<br> MOQ 4 (pieces)</p>
-                             </div>    
-                             <div class="pricing">
+                            </div>    
+                            <div class="pricing">
                                 <img src="img/four.jpg" alt=""/>
                                 <p>Free sample small tote bag gucci<br> fen... ₦900 - ₦1,500<br> MOQ 4 (pieces)</p>
-                                 </div>
-                                 </div>
+                                </div>
+                                </div>
                 </section>
-  
+
                 </main>  
-                <script type="text/javascript" src="index.js"></script>            
+                <script>
+               const btn=document.getElementById("btn_link1");
+            
+            btn.addEventListener("click",()=>{
+                window.location.replace("http://127.0.0.1:5500/success.html")
+            });
+            
+                </script>            
 </body>
 </html>

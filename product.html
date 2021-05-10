@@ -76,12 +76,23 @@
                 <p> Segun Arinze</p>               
              </div>
             </div>
-            
-            <div id="toaster">Item added to cart Successfully</div>
-            <button id="cartbtn" class="add-cart">Add to cart</button>
+
+            <section>
+            <div id="toaster">Item added to cart Successfully</div> 
+            <button id="cartbtn" class="add-cart" >Add to cart</button>
             <button class="wish">Wishlist</button>
-            
+            </section>
+
             </main>
-            <script type="text/javascript" src="index.js"></script>         
+            <script>
+             const toaster = document.getElementById("toaster");
+            const cartbtn = document.getElementById("cartbtn");
+            cartbtn.addEventListener("click", () => {
+                toaster.className = "show";
+                setTimeout(() => { 
+                    toaster.className = toaster.className.replace("show", "");
+                }, 3000);
+            });
+            </script>         
 </body>
 </html>

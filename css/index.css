@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height:100vh;
+    min-height:150vh;
     background-color: #fff;  
     font-family: 'Roboto', sans-serif;
     font-family: 'PT Serif', serif;
@@ -31,7 +31,7 @@ body{
     max-width:600px;
     border:1px solid #e9ecf1;
     position: relative;
-    height:100vh;
+    height:150vh;
     overflow-y: scroll;
     scroll-behavior:smooth;
     
@@ -89,6 +89,11 @@ margin-top: 2em;
 padding: 2em;
 }
 
+.heading h3{
+    color: rgb(34, 29, 29);
+    margin-bottom:3%;
+}
+
 div.header.container{
     display: flex;
     width: 100%;
@@ -104,6 +109,7 @@ div.header.container{
     flex:1%;
     align-items: center;
     display: flex;
+    
 }
 
 .container span{
@@ -120,7 +126,7 @@ div.header.container{
     align-items: center;
     height: 5vh;
     background-color: rgb(245, 244, 250);
-    
+    margin-top:3%;
 }
 
 /** FOR BANNER*/
@@ -233,6 +239,10 @@ section.cards{
     margin-top: .35em;
 }
 
+.product-pricing{
+    width: 100%;
+}
+
 .note{
     display: flex;
     width:100%;
@@ -244,6 +254,10 @@ section.cards{
     padding: 3%;
     display: inline;
     flex:1%;   
+}
+
+.pricing img{
+    border-radius: 7%;
 }
 
 .pricing p{
@@ -262,8 +276,12 @@ section.cards{
     padding:2%;
     flex: 1%;
     width:100%;
+    
 }
 
+.cost img{
+    border-radius: 7%;
+}
 
 
 /**--PRODUCT PAGE**/
@@ -388,11 +406,12 @@ align-items: center;
         cursor: pointer;
         background-color: rgb(37, 46, 175);
         color: #fff;
-        font-size: 10px;
+        font-size: 11px;
         padding:2%;
         text-align:center;
         margin:1%;
         margin-left: 6%;
+        border-radius: 8%;
 
     }
 
@@ -400,9 +419,10 @@ align-items: center;
         cursor: pointer; 
         background-color: #fff;
         color: black;
-        font-size: 10px;
+        font-size: 11px;
         padding:2%;
         text-align:center;
+        border-radius: 8%;
     }
     .out{
         cursor: pointer; 
