@@ -246,6 +246,7 @@ section.cards{
 .note{
     display: flex;
     width:100%;
+    max-width: 120%;
     
 }
 .pricing{
@@ -258,6 +259,8 @@ section.cards{
 
 .pricing img{
     border-radius: 7%;
+    object-fit: contain;
+    width:100%;
 }
 
 .pricing p{
@@ -281,6 +284,13 @@ section.cards{
 
 .cost img{
     border-radius: 7%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.notes{
+    max-width: 120%;
+    display: flex;
 }
 
 
